@@ -13,7 +13,7 @@ def inserirCliente(fila,pessoa):
     fila.append(pessoa)
 
 def atenderCliente(fila):
-    fila.popleft()
+    return fila.popleft()
 
 
 print(fila)
@@ -25,7 +25,7 @@ inserirCliente(fila,'Antonia')
 
 print(fila)
 
-atenderCliente(fila)
-atenderCliente(fila)
-atenderCliente(fila)
-print(fila)
+print(f'Cliente atendido: {atenderCliente(fila)}')
+print(f'Cliente atendido: {atenderCliente(fila)}')
+print(f'Cliente atendido: {atenderCliente(fila)}')
+print(f'Cliente atendido: {atenderCliente(fila)}')
